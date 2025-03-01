@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   # 
   root to: "messages#index"
+  
+  devise_for :users
 end
+
