@@ -25,6 +25,11 @@ require 'rspec/rails'
 #
 # Rails.root.glob('spec/support/**/*.rb').sort_by(&:to_s).each { |f| require f }
 
+# Requires supporting ruby files with custom matchers and macros, etc, in
+# spec/support/ and its subdirectories. Users commonly want to share support code between
+# their feature specs and here.
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
+
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
 begin
@@ -37,6 +42,8 @@ I18n.locale = "en"
 
 
 RSpec.configure do |config|
+
+  config.include SignInSupport
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_paths = [
     Rails.root.join('spec/fixtures')
