@@ -13,6 +13,7 @@ class MessagesController < ApplicationController
        redirect_to room_messages_path(@room)
      else
        @messages = @room.messages.includes(:user)
+       flash.now[:alert] = 'メッセージを入力してください'
        render :index, status: :unprocessable_entity
      end
    end
