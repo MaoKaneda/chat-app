@@ -69,9 +69,14 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+<<<<<<< Updated upstream
 gem 'devise'
 
 gem 'pry-rails'
 
 gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
+=======
+
+gem 'devise'
+>>>>>>> Stashed changes

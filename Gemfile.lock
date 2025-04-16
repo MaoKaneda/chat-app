@@ -111,7 +111,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+<<<<<<< Updated upstream
     diff-lcs (1.6.0)
+=======
+>>>>>>> Stashed changes
     drb (2.2.1)
     erubi (1.13.1)
     factory_bot (6.5.1)
@@ -309,9 +312,12 @@ DEPENDENCIES
   capybara
   debug
   devise
+<<<<<<< Updated upstream
   factory_bot_rails
   faker
   image_processing (~> 1.2)
+=======
+>>>>>>> Stashed changes
   importmap-rails
   jbuilder
   mini_magick
