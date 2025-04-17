@@ -47,6 +47,5 @@ RSpec.configure do |config|
   # trueにすると、テストごとにデータベースがリセットされます
   config.use_transactional_fixtures = true
 
-  # テストのエラーメッセージをわかりやすくするための設定です
   config.filter_rails_from_backtrace!
 end
